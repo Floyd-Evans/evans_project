@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<!-- 
+
+-->
+
+<head>
+  <meta charset="utf-8">
+
+  <title>MET CS 601 Floyd Evans - Home</title>
+  <meta name="description" content="CS601">
+  <meta name="author" content="Floyd Evans">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/print_styles.css" rel="stylesheet" media="print">
+  <script defer src="js/vue.js"></script>
+  <script defer src="js/main.js"></script>
+
+</head>
+
+<body>
+  <div id="apps" class="normal">
+    <header>
+      <top-menu active-tab="contact"></top-menu>
+    </header>
+  </div>
+
+  <div id="app" class="contactform">
+    <header>
+      <top-menu></top-menu>
+      <br />
+
+      <h1 class="title">Contact Form</h1>
+
+    </header>
+    <hr>
+
+    <form class="form" @submit="onSubmit">
+      <input required name="name" v-model='contact.name' placeholder="Name" type="text" autocomplete="off">
+      <input required name="email" v-model="contact.email" placeholder="E-mail" type="email" autocomplete="off">
+      <textarea required name="message" v-model="contact.message" rows="6" placeholder="Message"></textarea>
+      <button class="button">Submit</button>
+    </form>
+  </div>
+
+</body>
+
+</html>

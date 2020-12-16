@@ -1,0 +1,24 @@
+body {
+  background-color: powderblue;
+}
+
+h1 {
+  color: red;
+}
+
+p {
+  color: blue;
+}
+
+aside {
+  font-style: normal;
+  background-color: rgba(165, 170, 194, 0.986);
+}
+
+tr:nth-child(even) {
+  background-color: rgba(131, 190, 141, 0.979);
+}
+
+video {
+  visibility: hidden;
+}

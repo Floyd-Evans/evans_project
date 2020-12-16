@@ -1,0 +1,179 @@
+header {
+  text-align: center;
+}
+
+body {
+  background-color: #f0f8ff;
+  width: 90%;
+  margin: auto;
+  font: 125%/1.45 'Quattrocento Sans', sans-serif;
+}
+
+section {
+  text-align: center;
+}
+
+sections {
+  float: left;
+}
+
+h1 {
+  color: blue;
+}
+
+p {
+  color: rgba(16, 16, 19, 0.733);
+}
+
+p::first-letter {
+  font-weight: bold;
+  font-size: larger;
+}
+
+nav {
+  list-style-type: none;
+  margin: 5px auto;
+  padding: 0;
+  width: 90%;
+  position: fixed;
+  background-color: #f1f1f1;
+  display: block;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+nav a {
+  color: rgb(0, 0, 0);
+  padding: 1px 16px;
+}
+
+nav a.active {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+a:after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: -1;
+  pointer-events: none;
+}
+
+nav a:hover:after {
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+nav a:hover:not(.active) {
+  background-color: #aeaeae;
+  color: white;
+}
+
+.title {
+  color: blue;
+  font-size: 28px;
+}
+
+aside {
+  width: 65%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: rgba(249, 250, 241, 0.986);
+}
+
+.activeTab {
+  font-weight: bold;
+  background-color: rgb(129, 155, 158);
+}
+
+.imgs {
+  width: 30%;
+}
+
+.image {
+  width: 100%;
+  height: 300px;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+table {
+  border-collapse: collapse;
+  color: rgb(80, 48, 33);
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(144, 172, 194, 0.979);
+}
+
+.contactform {
+  font-family: 16px;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 90%;
+}
+
+.contactform .form {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+
+.contactform input[type="email"],
+.contactform input[type="text"],
+.contactform textarea {
+  border: solid 1px #e8e8e8;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 7px;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.contactform textarea {
+  resize: none;
+}
+
+.contactform .button {
+  background: #606861;
+  border: solid 1px #061605;
+  color: white;
+  cursor: pointer;
+  padding: 10px 50px;
+  text-align: center;
+}
+
+.contactform .button:hover {
+  background: #306232;
+  border: solid 1px #063f17;
+}
+
+.contactform input[type="email"],
+.contactform input[type="text"],
+.contactform textarea,
+.contactform .button {
+  font-size: 15px;
+  border-radius: 3px
+}
+
+footer {
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<!--Interests page that will house fun and intersting things we like to do-->
+
+<head>
+  <meta charset="utf-8">
+
+  <title>MET CS 601 Floyd Evans - Interests</title>
+  <meta name="description" content="CS601">
+  <meta name="author" content="Floyd Evans">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/print_styles.css" rel="stylesheet" media="print">
+  <script defer src="js/vue.js"></script>
+  <script defer src="js/main.js"></script>
+
+</head>
+
+<!--Body tag as width and margin so that there is a margin on either side of the screen.-->
+
+<body>
+  <div id="apps" class="normal">
+    <header>
+      <top-menu active-tab="interests"></top-menu>
+      <br />
+      <h1 class="title">My Interests</h1>
+    </header>
+
+    <hr>
+
+    <!--Section tag to separate and give manueverability to different parts of the page-->
+    <section class="section">
+      <h3>A short trip</h3>
+
+      <!--Video tag will allow a video to be embedded in a web page-->
+      <p><video src="videos/driving.MOV" width="500" height="300" controls>
+          Your browser does not support videos</video></p>
+    </section>
+
+    <hr>
+    <h2>Things I enjoy</h2>
+    <!--Unordered list-->
+    <ul>
+      <li>Favorite Sports
+        <ul>
+          <li><a href="http://kal.stparchive.com/Archive/KAL/KAL05172018p17.php?tags=evans" target="_blank">Track</a>
+          </li>
+          <li><a href="https://www.southeastiowaunion.com/p/mid-prairie-claims-titles-at-state-xc/1590715"
+              target="_blank">Cross Country</a></li>
+          <li>Gymnastics</li>
+        </ul>
+      </li>
+      <!--List with an ordered list inside for variety-->
+      <li>Favorite places I love to visit
+        <ol>
+          <li>Minneapolis, MN</li>
+          <li>Chicago, IL</li>
+          <li>Colombia, MO</li>
+        </ol>
+      </li>
+    </ul>
+    <!--Fieldset separates a section of the page and allows text at the top of the section as the legend-->
+    <fieldset>
+      <legend>Trips, Trails and Travels</legend>
+      <section style="float: left;">
+        <h3>Vacations</h3>
+        <table>
+          <tr>
+            <th>Minneapolis many times</th>
+            <th><img src="images/Minneapolis.JPG" width="400" height="300" alt="portrait" /></th>
+            <th>Vacation 2020 - Nowhere</th>
+          </tr>
+        </table>
+      </section>
+
+      <section style="float: right;">
+        <h3>And more</h3>
+        <table>
+          <tr>
+            <th>Country</th>
+            <th>City</th>
+          </tr>
+          <tr>
+            <td>Jamaica</td>
+            <td>All over</td>
+          </tr>
+          <tr>
+            <td>Mexico</td>
+            <td>Chapala, Ajixic, Guadalajara</td>
+          </tr>
+          <tr>
+            <td>Japan</td>
+            <td>Tokyo</td>
+          </tr>
+        </table>
+      </section>
+    </fieldset>
+
+</body>
+
+</html>
