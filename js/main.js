@@ -7,7 +7,7 @@ Vue.component('top-menu', {
   },
   template: `
   <nav>
-    <a href="./index.html" :class="{activeTab: activeTab === 'home'}">Home</a>
+    <a href="./home.html" :class="{activeTab: activeTab === 'home'}">Home</a>
     <a href="./interests.html" :class="{activeTab: activeTab === 'interests'}">About Me</a>
     <a href="./family.html" :class="{activeTab: activeTab === 'family'}">Family</a>
     <a href="./contact.html" :class="{activeTab: activeTab === 'contact'}">Contact</a>

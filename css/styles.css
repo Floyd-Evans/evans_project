@@ -15,6 +15,17 @@ section {
 
 sections {
   float: left;
+  width: auto;
+}
+
+.section-right {
+  float: right;
+  width: auto;
+}
+
+.section-left {
+  float: left;
+  width: auto;
 }
 
 h1 {
@@ -72,6 +83,92 @@ nav a:hover:after {
 nav a:hover:not(.active) {
   background-color: #aeaeae;
   color: white;
+}
+
+.hoverable li:hover {
+  background-color: rgb(230, 225, 225)
+}
+
+.animate-top {
+  position: relative;
+  animation: animatetop 2.0s
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+.animate-left {
+  position: relative;
+  animation: animateleft 2.0s
+}
+
+@keyframes animateleft {
+  from {
+    left: -500px;
+    opacity: 0
+  }
+
+  to {
+    left: 0;
+    opacity: 1
+  }
+}
+
+.animate-right {
+  position: relative;
+  animation: animateright 2.0s
+}
+
+@keyframes animateright {
+  from {
+    right: -500px;
+    opacity: 0
+  }
+
+  to {
+    right: 0;
+    opacity: 1
+  }
+}
+
+.animate-bottom {
+  position: relative;
+  animation: animatebottom 2.0s
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1
+  }
+}
+
+.animate-zoom {
+  animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
 }
 
 .title {
@@ -169,6 +266,10 @@ tr:nth-child(even) {
 .contactform .button {
   font-size: 15px;
   border-radius: 3px
+}
+
+.circle {
+  border-radius: 5%
 }
 
 footer {
